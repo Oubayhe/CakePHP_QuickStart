@@ -39,3 +39,39 @@ bin/cake server
 ## 5. Connect to the database:
 * Create a database in your phpMyAdmin
 * In you project folder go to **config/app_local.php** and set the username, password and database to thier actual values.
+
+# Simple CRUD App using CakaPHP - Students Management System:
+We're going to build a very simple crud app using CakePHP. The app is a Student management system, it will be able to add new student, delete, edit and display.
+## 1. Create the student table:
+The student table has this columns:
+    - id: int & auto_incremented 
+    - first_name: varchar(55)
+    - last_name: varchar(55)
+    - email: varchar(55)
+    - mobile: varchar(55)
+    - address: varchar(55)
+![Student Table](/readme_images/student_table.png)
+## Bake All:
+Here is to create the template, model and controller of the Student table. All you need to do is:
+```
+bin/server bake all
+```
+then:
+```
+bin/server bake all Students
+```
+Once you do that, you automaticaly created all the necessary files (Controllers, views, tests...).
+To use the app, you can run it again using 
+```
+bin/cake server
+```
+and with the built-in server link, you can add */students* and operate the CRUD Functions on the student model.
+Here is an example of Creating, Getting/Reading, Updating/Editing and Deleting a student:
+* Add a Student:
+![add student](./readme_images/add_student.png)
+* View All Students:
+![get students](./readme_images/view_student.png)
+* Edit student (the mobile number):
+![update student](./readme_images/edit_student.png)
+* Delete student:
+![delete student](./readme_images/delete_student.png)
