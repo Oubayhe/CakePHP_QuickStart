@@ -51,7 +51,7 @@ The student table has this columns:
     - mobile: varchar(55)
     - address: varchar(55)
 ![Student Table](/readme_images/student_table.png)
-## Bake All:
+## 2. Bake All:
 Here is to create the template, model and controller of the Student table. All you need to do is:
 ```
 bin/server bake all
